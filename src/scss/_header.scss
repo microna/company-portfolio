@@ -1,6 +1,6 @@
 // ========================= [ Header styles ] =========================
 .header {
-    background-color: #43adff;
+  
 
     &.fixed {
         position: fixed;
@@ -12,8 +12,9 @@
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    flex-basis: 100%;
     padding: 20px 0;
 }
 .logo {
@@ -25,6 +26,8 @@
 // ========================== [ Menu styles ] ==========================
 .menu {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 30px;
 
     // .menu__item
@@ -35,10 +38,15 @@
 
     // .menu__item-link
     &__item-link {
+        display: flex;
+        align-items: center;
         color: white;
         display: flex;
         position: relative;
         transition: 0.5s color;
+        img{
+            margin-right: 16px;
+        }
         &:after {
             position: absolute;
             content: '';

@@ -1,44 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-</head>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
 
-<body class="main__body">
+  <body class="main__body">
     <!-- Header -->
     <header>
-    <!-- Navbar -->
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo"> <a href="#"> #Давай попробуем: JavaScript </a> </div>
-                <nav>
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Portfolio</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Info</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contacts</a></li>
-                    </ul>
-                </nav>
-
-                <button class="burger">
-                    <span></span>
-                </button>
-            </div>
+  <!-- Navbar -->
+  <div class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"> <img src="../img/logo.svg" alt="logo" /> </a>
         </div>
+
+        <a href="#" class="menu__item-link" data-scroll
+          ><img src="../img/website.svg" alt="" /> https://lucidica.co.uk</a
+        >
+
+        <a href="#" class="menu__item-link" data-scroll
+          ><img src="../img/call.svg" alt="" />020 7042 6310</a
+        >
+
+        <a href="#" class="menu__item-link" data-scroll
+          ><img src="../img/mail.svg" alt="" />service@lucidica.com</a
+        >
+      </nav>
+
+      <button class="burger">
+        <span></span>
+      </button>
     </div>
+  </div>
 </header>
+
     <!-- Main Page -->
-    <main></main>
+    <main><section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">Our Expertise in Action</h1>
+      <div class="hero__text">
+        <p>
+          Every project is a chance to craft something unique and memorable. We
+          go beyond tasks -analyzing needs and turning ideas into impactful
+          solutions.
+        </p>
+      </div>
+      <a href="#" class="button-primary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="projects">
+  <div class="container">
+    <div class="projects__content">
+      <h2 class="projects__content-title">
+        Proud<br />
+        Projects -
+      </h2>
+      <span class="projects__content-text"
+        >clients trust Lucidica, and we<br />
+        value each one of them.</span
+      >
+    </div>
+    <div class="projects__slider">
+      <div class="projects__slider-item">
+        <div class="projects__slider-item-content">
+          <div class="projects__slider-item-content-title">
+            <h3>Project 1</h3>
+          </div>
+        </div>
+      </div>
+      <div class="projects__slider-item">
+        <div class="projects__slider-item-content">
+          <div class="projects__slider-item-content-title">
+            <h3>Project 1</h3>
+          </div>
+        </div>
+      </div>
+      <div class="projects__slider-item">
+        <div class="projects__slider-item-content">
+          <div class="projects__slider-item-content-title">
+            <h3>Project 1</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
     <!-- Footer -->
-    
-</body>
+    <footer>
+  <div class="container">
+    <div class="footer">
+      <div class="col-1">
+        <div class="logo">
+          <a href="#">
+            <img src="../img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="copyright">© Copyright Lucidica Ltd</div>
+        <div class="company-info">
+          Lucidica Limited is registered in England and Wales number 05549514.
+          Registered office: Unit 219, 37 Cremer Street, Hoxton, E2 8HD. VAT
+          number 868 8164 67
+        </div>
+      </div>
+      <div class="col-2">
+        <a href="#" class="menu__item-link">
+          <img src="../img/website.svg" alt="" /> https://lucidica.co.uk
+        </a>
+        <a href="#" class="menu__item-link">
+          <img src="../img/call.svg" alt="" />020 7042 6310
+        </a>
+        <a href="#" class="menu__item-link">
+          <img src="../img/mail.svg" alt="" />service@lucidica.com
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-<script src="./js/scripts.min.js"></script>
+  </body>
 
+  <script type="module" src="./js/scripts.min.js"></script>
 </html>

@@ -22,9 +22,36 @@
     }
 }
 
+.button-primary {
+    background-color: $white;
+    color: $lightBlue;
+    padding: 16px 48px 16px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/arrow_forward.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+}
+
 // Body & Locked
 body {
+    color: $white;
+    background-color: #14192E;
     font-family: $fontMain;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
     &.locked {
         overflow: hidden;
     }

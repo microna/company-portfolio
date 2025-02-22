@@ -1,4 +1,49 @@
 // Footer
 footer {
-    display: block;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.col-1 {
+    width: 36%;
+    .logo {
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+    div {
+        color: white;
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // gap: clamp(30px, 5vw, 60px);
+    
+    .menu__item-link {
+        display: flex;
+        align-items: center;
+        color: white;
+        transition: 0.5s color;
+        
+        img {
+            margin-right: 16px;
+        }
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }

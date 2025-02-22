@@ -9,7 +9,13 @@ $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
 // Colors
-$mainColor: #131418;
+$darkBlue:  #14192e;
+$white: #ffffff;
+$grey: #e6e6e6;
+$blue:  #092196;
+$lightBlue: #0058e6;
+$purpule: #a982ed;
+
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint992;
@@ -17,5 +23,13 @@ $burgerColor: #131418;
 $burgerActiveColor: #fefefe;
 
 // Fonts
-$fontMain: sans-serif;
-$fontSecondary: '';
+$fontSecondary: 'Inter', sans-serif ;
+$fontMain: 'Open Sans', sans-serif;
+
+
+
+// Font Sizes
+$fontSizeDefault: 16px;
+$fontSizeSmall: 14px;
+$fontSizeBig: 20px;
+
