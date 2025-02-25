@@ -44,6 +44,61 @@
     }
 }
 
+.button-secondary {
+    background-color: $lightBlue;
+    color: $white;
+    padding: 16px 48px 16px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/arrow-forward-white.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.portfolio {
+    padding-top: 40px;
+    &__content {
+        display: flex;
+        align-items: flex-end;
+        gap: 25px;
+        &-title {
+            font-size: 100px;
+            font-weight: 700;
+            font-family: $fontSecondary;
+        }
+        &-text {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -30px;
+                left: -40px;
+                width: 100%;
+                height: 25px;
+                background-image: url(../img/blue-underline.svg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
 // Body & Locked
 body {
     color: $white;

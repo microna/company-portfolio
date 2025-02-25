@@ -23,9 +23,7 @@
 .projects {
     padding-top: 40px;
     &__content {
-        display: flex;
-        align-items: flex-end;
-        gap: 25px;
+       padding-bottom: 100px;     
         &-title {
             font-size: 100px;
             font-weight: 700;
@@ -53,7 +51,7 @@
     }
     &__slider {
         padding-top: 104px;
-        padding-bottom: 56px;
+        padding-bottom: 106px;
         margin: 0 -80px;
         padding-left: 100px;
         padding-right: 100px;
@@ -108,7 +106,7 @@
             color: $darkBlue;
             padding: 24px 39px 27px 24px;
             border-radius: 12px;
-            width: calc(50% - 10px);
+            width: calc(40% - 10px);
             
             &:nth-child(3) {
                 background-color: $lightBlue;
@@ -150,5 +148,57 @@
         &-text {
             font-size: 28px;
         }
+    }
+}
+
+// testimonials section
+.testimonials {
+    padding: 100px 0 100px 0;
+    &__content {
+     padding-bottom: 80px;
+    }
+    &__slider-item {
+        min-width: 360px;
+        color: $darkBlue;
+        background-color: $white;
+        border-radius: 16px;
+        padding: 24px 24px 44px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .button-secondary {
+            align-self: flex-start;
+            margin-top: auto;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__slider-stars{
+        padding-bottom: 11px;
+    }
+    &__slider-subtitle{
+        font-size: 12px;
+        font-weight: 400;
+        color: $darkBlue;
+        font-family: $fontMain;
+        padding-bottom: 8px;
+    }
+    &__slider-title{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $fontSecondary;
+        font-style: italic;
+    }
+    &__slider-text{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $fontMain;
+        padding-top: 20px;
+        padding-bottom: 44px;
     }
 }

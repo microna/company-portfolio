@@ -54,7 +54,8 @@
 
 // console.log(swiper);
 
-var swiper = new Swiper(".projects__slider", {
+// Projects slider
+var projectsSwiper = new Swiper(".projects__slider", {
   slidesPerView: "auto",
   spaceBetween: 24,
   loop: true,
@@ -71,7 +72,38 @@ var swiper = new Swiper(".projects__slider", {
   breakpoints: {
     320: {
       slidesPerView: 1.2,
+      spaceBetween: 2,
+    },
+    768: {
+      slidesPerView: 2.2,
       spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// Portfolio slider
+var portfolioSwiper = new Swiper(".testimonials__slider", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  centeredSlides: false,
+  initialSlide: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 2,
     },
     768: {
       slidesPerView: 2.2,
