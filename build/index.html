@@ -4,41 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+
+    <title>Lucidica Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
 
   <body class="main__body">
     <!-- Header -->
-    <header>
-  <!-- Navbar -->
-  <div class="header">
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">
-          <a href="#"> <img src="../img/logo.svg" alt="logo" /> </a>
-        </div>
-
-        <a href="#" class="menu__item-link" data-scroll
-          ><img src="../img/website.svg" alt="" /> https://lucidica.co.uk</a
-        >
-
-        <a href="#" class="menu__item-link" data-scroll
-          ><img src="../img/call.svg" alt="" />020 7042 6310</a
-        >
-
-        <a href="#" class="menu__item-link" data-scroll
-          ><img src="../img/mail.svg" alt="" />service@lucidica.com</a
-        >
-      </nav>
-
-      <button class="burger">
-        <span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
+    
     <!-- Main Page -->
     <main><section class="hero">
   <div class="container">
@@ -68,65 +45,68 @@
         value each one of them.</span
       >
     </div>
-    <div class="projects__slider">
-      <div class="projects__slider-item">
-        <div class="projects__slider-item-content">
-          <div class="projects__slider-item-content-title">
-            <h3>Project 1</h3>
-          </div>
-        </div>
+  </div>
+  <div class="swiper projects__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide projects__slider-item">
+        <img class="projects__slider-img" src="../img/project-1.jpg" alt="" />
+        <h5 class="projects__slider-title">Project 1</h5>
+        <p class="projects__slider-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
       </div>
-      <div class="projects__slider-item">
-        <div class="projects__slider-item-content">
-          <div class="projects__slider-item-content-title">
-            <h3>Project 1</h3>
-          </div>
-        </div>
+      <div class="swiper-slide projects__slider-item">
+        <img class="projects__slider-img" src="../img/project-1.jpg" alt="" />
+        <h5 class="projects__slider-title">Project 2</h5>
+        <p class="projects__slider-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
       </div>
-      <div class="projects__slider-item">
-        <div class="projects__slider-item-content">
-          <div class="projects__slider-item-content-title">
-            <h3>Project 1</h3>
-          </div>
-        </div>
+      <div class="swiper-slide projects__slider-item">
+        <img class="projects__slider-img" src="../img/project-1.jpg" alt="" />
+        <h5 class="projects__slider-title">Project 3</h5>
+        <p class="projects__slider-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
       </div>
+      <div class="swiper-slide projects__slider-item">
+        <img class="projects__slider-img" src="../img/project-1.jpg" alt="" />
+        <h5 class="projects__slider-title">Project 4</h5>
+        <p class="projects__slider-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+      </div>
+      <div class="swiper-slide projects__slider-item">
+        <img class="projects__slider-img" src="../img/project-1.jpg" alt="" />
+        <h5 class="projects__slider-title">Project 5</h5>
+        <p class="projects__slider-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+      </div>
+      <div class="swiper-slide projects__slider-item">
+        <img class="projects__slider-img" src="../img/project-1.jpg" alt="" />
+        <h5 class="projects__slider-title">Project 6</h5>
+        <p class="projects__slider-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+      </div>
+      
     </div>
+  </div>
+  <div class="container">
+    <a href="#" class="button-primary">Explore our work</a>
   </div>
 </section>
 </main>
     <!-- Footer -->
-    <footer>
-  <div class="container">
-    <div class="footer">
-      <div class="col-1">
-        <div class="logo">
-          <a href="#">
-            <img src="../img/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <div class="copyright">© Copyright Lucidica Ltd</div>
-        <div class="company-info">
-          Lucidica Limited is registered in England and Wales number 05549514.
-          Registered office: Unit 219, 37 Cremer Street, Hoxton, E2 8HD. VAT
-          number 868 8164 67
-        </div>
-      </div>
-      <div class="col-2">
-        <a href="#" class="menu__item-link">
-          <img src="../img/website.svg" alt="" /> https://lucidica.co.uk
-        </a>
-        <a href="#" class="menu__item-link">
-          <img src="../img/call.svg" alt="" />020 7042 6310
-        </a>
-        <a href="#" class="menu__item-link">
-          <img src="../img/mail.svg" alt="" />service@lucidica.com
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    
   </body>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./js/scripts.min.js"></script>
 </html>
