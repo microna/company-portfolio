@@ -50,11 +50,11 @@
         }
     }
     &__slider {
-        padding-top: 104px;
-        padding-bottom: 106px;
-        margin: 0 -80px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-top: 104px !important;
+        padding-bottom: 106px !important;
+        margin: 0 -80px !important;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
         
         .swiper {
             overflow: visible;
@@ -63,19 +63,19 @@
         }
         
         &-item {
-            min-width: 360px;
-            background-color: $white;
-            border-radius: 16px;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            min-width: 360px !important;
+            background-color: $white !important;
+            border-radius: 16px !important;
+            padding: 24px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 16px !important;
         }
         &-title {
-            font-family: $fontMain;
-            font-size: 16px;
-            font-weight: 400;
-            color: $lightBlue;
+            font-family: $fontMain !important;
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            color: $lightBlue !important;
         }
         &-text {
             font-family: $fontMain;
