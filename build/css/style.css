@@ -302,7 +302,150 @@ body.dark {
   z-index: 3;
 }
 
+@-webkit-keyframes float-random {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: translate(15px, -10px);
+            transform: translate(15px, -10px);
+  }
+
+  40% {
+    -webkit-transform: translate(5px, 15px);
+            transform: translate(5px, 15px);
+  }
+
+  60% {
+    -webkit-transform: translate(-10px, 5px);
+            transform: translate(-10px, 5px);
+  }
+
+  80% {
+    -webkit-transform: translate(8px, -7px);
+            transform: translate(8px, -7px);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes float-random {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: translate(15px, -10px);
+            transform: translate(15px, -10px);
+  }
+
+  40% {
+    -webkit-transform: translate(5px, 15px);
+            transform: translate(5px, 15px);
+  }
+
+  60% {
+    -webkit-transform: translate(-10px, 5px);
+            transform: translate(-10px, 5px);
+  }
+
+  80% {
+    -webkit-transform: translate(8px, -7px);
+            transform: translate(8px, -7px);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.ellipse-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: -1;
+}
+
+.ellipse--top-left {
+  top: -14%;
+  left: -48%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: float-random 15s ease-in-out infinite;
+          animation: float-random 15s ease-in-out infinite;
+}
+
+.ellipse--top-left img {
+  max-width: 100%;
+  /* Ensures the image doesn't exceed its container width */
+  height: auto;
+  /* Maintains the image aspect ratio */
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* Makes sure the entire image is visible within its box */
+  overflow: visible;
+  /* Allows content to be visible outside its box */
+  display: block;
+}
+
+.ellipse--top-right {
+  top: -5%;
+  right: -35%;
+  width: 70%;
+  height: 70%;
+  animation: float-random 18s ease-in-out infinite reverse;
+}
+
+.ellipse--top-right img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: visible;
+  display: block;
+  opacity: 0.7;
+}
+
+.ellipse--top-center {
+  top: -10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  -webkit-animation: float-random 20s ease-in-out infinite;
+          animation: float-random 20s ease-in-out infinite;
+}
+
+.ellipse--top-center img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: visible;
+  display: block;
+  opacity: 0.5;
+}
+
 .hero {
+  position: relative;
   padding-top: 155px;
   padding-bottom: 155px;
 }
@@ -780,7 +923,118 @@ body.dark {
   opacity: 0.8;
 }
 
+@keyframes float-random {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: translate(15px, -10px);
+            transform: translate(15px, -10px);
+  }
+
+  40% {
+    -webkit-transform: translate(5px, 15px);
+            transform: translate(5px, 15px);
+  }
+
+  60% {
+    -webkit-transform: translate(-10px, 5px);
+            transform: translate(-10px, 5px);
+  }
+
+  80% {
+    -webkit-transform: translate(8px, -7px);
+            transform: translate(8px, -7px);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.ellipse-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: -1;
+}
+
+.ellipse--top-left {
+  top: -14%;
+  left: -48%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: float-random 15s ease-in-out infinite;
+          animation: float-random 15s ease-in-out infinite;
+}
+
+.ellipse--top-left img {
+  max-width: 100%;
+  /* Ensures the image doesn't exceed its container width */
+  height: auto;
+  /* Maintains the image aspect ratio */
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* Makes sure the entire image is visible within its box */
+  overflow: visible;
+  /* Allows content to be visible outside its box */
+  display: block;
+}
+
+.ellipse--top-right {
+  top: -5%;
+  right: -35%;
+  width: 70%;
+  height: 70%;
+  animation: float-random 18s ease-in-out infinite reverse;
+}
+
+.ellipse--top-right img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: visible;
+  display: block;
+  opacity: 0.7;
+}
+
+.ellipse--top-center {
+  top: -10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  -webkit-animation: float-random 20s ease-in-out infinite;
+          animation: float-random 20s ease-in-out infinite;
+}
+
+.ellipse--top-center img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: visible;
+  display: block;
+  opacity: 0.5;
+}
+
 .hero {
+  position: relative;
   padding-top: 155px;
   padding-bottom: 155px;
 }
