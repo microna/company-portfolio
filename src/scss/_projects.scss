@@ -1,0 +1,51 @@
+.projects-list {
+    padding: 100px 0 100px 0;
+}
+
+.projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 20px;
+}
+
+.project__item {
+    min-width: 360px !important;
+    background-color: $white !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+   
+}
+
+.project__item-title{
+    font-size: 32px;
+    font-weight: 400;
+    color: $darkBlue;
+    font-family: $fontMain;
+    padding-bottom: 8px;
+
+}
+
+.project__item-subtitle{
+    font-size: 12px;
+    font-weight: 400;
+    color: $lightBlue;
+    font-family: $fontMain;
+    padding-bottom: 8px;
+
+}
+
+.project-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-holder{
+    padding-top: 60px;
+    text-align: center;
+}
