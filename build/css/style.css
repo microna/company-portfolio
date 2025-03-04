@@ -580,7 +580,7 @@ body.dark {
   color: #14192e;
   padding: 24px 39px 27px 24px;
   border-radius: 12px;
-  width: calc(40% - 10px);
+  width: 264px;
 }
 
 .impact__blocks-item:nth-child(3) {
@@ -1169,7 +1169,7 @@ body.dark {
   color: #14192e;
   padding: 24px 39px 27px 24px;
   border-radius: 12px;
-  width: calc(40% - 10px);
+  width: 264px;
 }
 
 .impact__blocks-item:nth-child(3) {
