@@ -92,7 +92,7 @@
 // hero section
 .hero {
     position: relative;
-    padding-top: 155px;
+    padding-top: 200px;
     padding-bottom: 155px;
 }
 
@@ -145,9 +145,9 @@
     &__slider {
         padding-top: 104px !important;
         padding-bottom: 106px !important;
-        margin: 0 -80px !important;
-        padding-left: 100px !important;
-        padding-right: 100px !important;
+        // margin: 0 -80px !important;
+        // padding-left: 100px !important;
+        // padding-right: 100px !important;
         
         .swiper {
             overflow: visible;
@@ -294,4 +294,63 @@
         padding-top: 20px;
         padding-bottom: 44px;
     }
+}
+
+@media screen and (max-width: $breakpoint992) {
+
+    .hero {
+        padding-top: 300px;
+        padding-bottom: 70px;
+    }
+    .hero__content{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero__title{
+        font-size: 75px;
+    }
+
+    .hero__text{
+        margin-bottom: 50px;
+    }
+    .impact{
+        &__wrapper{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__blocks{
+            justify-content: center
+        }
+    }
+    .ellipse{
+      display: none;
+    }
+
+    .impact__content-title{
+        font-size: 75px;
+        &:after{
+            left: 0;
+        }
+
+    }
+    .impact__content{
+        width: 100%;
+        display: flex;
+    align-items: center;
+    gap: 50px;
+    }
+.projects__slider{
+    padding-top: 50px !important;
+}
+.projects__slider-title{
+    font-size: 18px !important;
+}
+
+.projects__slider-text{
+    font-size: 16px !important;
+}
+
+
 }

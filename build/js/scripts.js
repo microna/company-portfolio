@@ -71,11 +71,11 @@ var projectsSwiper = new Swiper(".projects__slider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
-      spaceBetween: 2,
+      slidesPerView: 2,
+      spaceBetween: 24,
     },
-    768: {
-      slidesPerView: 2.2,
+    992: {
+      slidesPerView: 3,
       spaceBetween: 24,
     },
     1024: {
@@ -102,8 +102,8 @@ var portfolioSwiper = new Swiper(".testimonials__slider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
-      spaceBetween: 2,
+      slidesPerView: 2.2,
+      spaceBetween: 24,
     },
     768: {
       slidesPerView: 2.2,

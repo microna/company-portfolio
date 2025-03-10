@@ -129,3 +129,12 @@ body {
         opacity: 1;
     }
 }
+
+
+@media screen and (max-width: $breakpoint992) {
+    .portfolio__content-title{
+        font-size: 65px;
+    }
+}
+
+

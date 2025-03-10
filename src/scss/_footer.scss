@@ -80,3 +80,21 @@ footer {
         }
     }
 }
+
+@keyframes float-random {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@media screen and (max-width: $breakpoint992) {
+   footer .ellipse-wrapper-footer {
+    display: none;
+   }
+}
+
+
