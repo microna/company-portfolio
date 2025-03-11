@@ -49,3 +49,27 @@
     padding-top: 60px;
     text-align: center;
 }
+
+
+@media screen and (max-width: $breakpoint992) {
+    .ellipse{
+        display: none;
+      }
+
+      .projects__wrapper{
+        justify-content: center;
+
+
+      }
+}
+
+@media screen and (max-width: $breakpoint768) {
+    .project__item{
+        max-width: 80%;
+    }
+
+    .project__item-subtitle{
+        font-size: 16px;
+    }
+}   
+

@@ -73,3 +73,37 @@
 .cta{
     padding: 100px 0;
 }
+
+@media screen and (max-width: $breakpoint992) {
+
+    .project-item{
+        padding-bottom: 0;
+        padding-left: 0;
+        &__content{
+            flex-direction: column-reverse;
+            // align-items: center;
+            padding-top: 0;
+         
+        }
+       
+    }
+    .project-item__title{
+        margin-bottom: 20px;
+        &:after{
+           left: -320px;
+           bottom: 0;
+        }
+    }
+    .project-item__description{
+        // max-width: 500px;
+    }
+    .cta{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: $breakpoint768) {
+    .project-item__title:after{
+        left: -200px;
+    }
+} 

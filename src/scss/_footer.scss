@@ -93,7 +93,7 @@ footer {
 
 @media screen and (max-width: $breakpoint992) {
    footer .ellipse-wrapper-footer {
-    display: none;
+    display: none  !important;
    }
 }
 
