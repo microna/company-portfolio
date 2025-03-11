@@ -1426,6 +1426,10 @@ footer .ellipse-wrapper-footer div img {
             justify-content: center;
   }
 
+  .impact__blocks {
+    width: 80%;
+  }
+
   .ellipse {
     display: none;
   }
@@ -1481,6 +1485,10 @@ footer .ellipse-wrapper-footer div img {
             justify-content: center;
   }
 
+  .projects-list {
+    padding-bottom: 50px;
+  }
+
   .project-item {
     padding-bottom: 0;
     padding-left: 0;
@@ -1505,6 +1513,7 @@ footer .ellipse-wrapper-footer div img {
 
   .cta {
     padding-top: 0;
+    padding-bottom: 0px;
   }
 
   footer .ellipse-wrapper-footer {
@@ -1544,6 +1553,10 @@ footer .ellipse-wrapper-footer div img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .impact__blocks {
+    width: 80%;
   }
 
   .ellipse {
@@ -1607,8 +1620,38 @@ footer .ellipse-wrapper-footer div img {
     font-size: 16px;
   }
 
+  .conclusions {
+    background: none;
+  }
+
   .project-item__title:after {
     left: -200px;
+  }
+
+  .project-item__image {
+    text-align: center;
+  }
+
+  .project-item__image img {
+    width: 90%;
+    text-align: center;
+  }
+
+  .conclusions {
+    padding-bottom: 50px;
+  }
+
+  .footer {
+    display: grid;
+    place-items: center;
+  }
+
+  .footer > div {
+    width: 100%;
+  }
+
+  .col-1 {
+    margin-bottom: 30px;
   }
 }
 
@@ -1616,6 +1659,10 @@ footer .ellipse-wrapper-footer div img {
   .portfolio__content-title,
   .impact__content-title {
     font-size: 45px;
+  }
+
+  .impact__blocks-item {
+    width: 100%;
   }
 
   .impact__content-text,
@@ -1634,6 +1681,10 @@ footer .ellipse-wrapper-footer div img {
   .portfolio__content-title,
   .impact__content-title {
     font-size: 45px;
+  }
+
+  .impact__blocks-item {
+    width: 100%;
   }
 
   .impact__content-text,
@@ -1669,6 +1720,14 @@ footer .ellipse-wrapper-footer div img {
 }
 
 @media screen and (max-width: 479.98px) {
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+  }
+
   .hero__content {
     max-width: 73%;
   }
@@ -1687,6 +1746,18 @@ footer .ellipse-wrapper-footer div img {
 
   .portfolio__content-text {
     font-size: 17px;
+  }
+
+  .project-item__title:after {
+    left: -88px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__text {
+    font-size: 18px;
   }
 
   .hero__content {

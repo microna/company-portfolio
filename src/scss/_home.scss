@@ -333,6 +333,9 @@
             justify-content: center
         }
     }
+    .impact__blocks{
+        width: 80%;
+    }
     .ellipse{
       display: none;
     }
@@ -379,6 +382,10 @@
     font-size: 45px;
   }
 
+  .impact__blocks-item{
+    width: 100%;
+  }
+
 .impact__content-text,
 .projects__content-text{
     font-size: 22px;
@@ -402,6 +409,12 @@ left: 0;
 
 
 @media screen and (max-width: $breakpoint480) {
+    .hero__title{
+        font-size: 50px;
+    }
+    .hero__text{
+        font-size: 18px;
+    }
     .hero__content{
         max-width: 73%;
     }

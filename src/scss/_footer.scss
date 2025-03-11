@@ -95,6 +95,25 @@ footer {
    footer .ellipse-wrapper-footer {
     display: none  !important;
    }
+//    .footer{
+//     display: block;
+//    }
+}
+
+
+@media screen and (max-width: $breakpoint768) {
+    .footer{
+        display: grid;
+        place-items: center; 
+        
+    }
+    .footer > div{
+        width: 100%;
+    }
+    .col-1{
+    
+        margin-bottom: 30px;
+    }
 }
 
 
