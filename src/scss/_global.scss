@@ -159,3 +159,91 @@ body {
 }
 
 
+// ************************ Modal window ************************ //
+.modal__wrapper {
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+
+    .modal {
+        background: white;
+        // border-radius: 50px;
+        padding: 25px;
+        border-radius: 40px;
+        height: 350px;
+        width: 60%;
+        height: 60%;
+
+        &__title {
+            text-align: center;
+        }
+        &__body {
+           
+          display: grid;    
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        }
+        &__btn{
+            column-span: all;
+        }
+
+        &__close {
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__input {
+            font-size: 16px;
+            padding: 16px 32px 16px 24px;
+            border-radius: 30px;
+            border: 1px solid #e4e4e4;
+            margin-bottom: 16px;
+            &:nth-child(5){
+                grid-column: span 2;
+            }
+        }
+        &__title{
+            color: $lightBlue;
+            font-size: $fontSecondary;
+            font-size: 40px;
+            padding-bottom: 35px;
+        }
+        
+    }
+}
+
+// ************************ Btn open modal ************************ //
+.modal__btn {
+    
+    grid-column: span 2;
+ 
+   
+}
+
+@media screen and (max-width: $breakpoint992) {
+    .modal__wrapper .modal__body{
+       display: block;
+       *{
+        width: 100%;
+       }
+
+}
+
+.modal__wrapper .modal{
+    height: 90%;
+}
+
+
+}
+
+
+
